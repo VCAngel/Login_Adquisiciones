@@ -1,0 +1,81 @@
+html {
+    font-size: 62.5%;
+    /* *Reset de REM » 62.5% de 16px = 10px*/
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    /* Recomendable 100% para que imagen se ajuste a contenedor*/
+}
+
+/* *Globales */
+
+.container-width {
+    max-width: 75%;
+}
+
+/* *Utilidades */
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fs-small {
+    font-size: small
+}
+
+.fs-medium {
+    font-size: medium;
+}
+
+.fs-large {
+    font-size: large;
+}
+
+.fs-xlarge {
+    font-size: x-large;
+}
+
+/* * Header */
+
+.bar-header {
+    
+    max-height: 10%;
+    margin: 1rem 0;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(110, 0, 118);
+    background: linear-gradient(90deg, rgba(110, 0, 118, 0) 0%, rgba(110, 0, 118, 1) 50%, rgba(75, 36, 99, 1) 100%);
+}
+
+.bar-header a {
+    max-width: 30%;
+}
+
+.navbar-spacing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-spacing a {
+    margin: 0 1rem;
+}
+
+
+
+/* TODO Login*/

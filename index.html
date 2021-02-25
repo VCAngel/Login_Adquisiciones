@@ -5,12 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <title>Adquisiciones</title>
 </head>
 
 <body>
-    <h1>Prueba inicial</h1>
+    <header>
+        <div class="container-fluid container-width">
+            <div class="bar-header">
+                <a href="https://uach.mx/">
+                    <img src="/resources/img/escudo-web-header-black.svg" alt="svg_logo">
+                    <!--Imagen Vector Logo-->
+                </a>
+
+                <nav class="navbar navbar-dark navbar-expand-lg fw-400 fs-large">
+
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <span id="navbarTitle">Menú</span> <!--Se maneja con un Script-->
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                            aria-label="Abrir navegación">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse navbar-nav navbar-spacing" id="navbarMenu">
+
+                            <a class="nav-link" href="#">Texto 1</a>
+                            <a class="nav-link" href="#">Texto 2</a>
+                            <a class="nav-link" href="#">Texto 3</a>
+                            <a class="nav-link" href="#">Texto 4</a>
+
+                        </div>
+
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </header>
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+    <script src="js/util/navbar-control.js"></script>
 
 </html>
