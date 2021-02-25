@@ -5,7 +5,8 @@ html {
 }
 
 *, *::before, *::after {
-    box-sizing: inherit;
+    box-sizing: inherit !important;
+    margin-top: 0 !important;
 }
 
 body {
@@ -51,6 +52,11 @@ img {
 
 /* * Header */
 
+.page-header {
+    position: relative;
+    /*TODO Hacer que esté alwaysOnTop*/
+}
+
 .bar-header {
     
     max-height: 10%;
@@ -75,7 +81,5 @@ img {
 .navbar-spacing a {
     margin: 0 1rem;
 }
-
-
 
 /* TODO Login*/

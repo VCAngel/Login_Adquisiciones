@@ -14,45 +14,61 @@
         href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 
+    <link rel="icon" href="resources/img/Logo_Renovación_UACH.png">
+
     <title>Adquisiciones</title>
 </head>
 
 <body>
     <header>
-        <div class="container-fluid container-width">
+        <!--Barra de navegación-->
+        <div class="container-fluid container-width page-header">
             <div class="bar-header">
                 <a href="https://uach.mx/">
                     <img src="/resources/img/escudo-web-header-black.svg" alt="svg_logo">
                     <!--Imagen Vector Logo-->
                 </a>
 
-                <nav class="navbar navbar-dark navbar-expand-lg fw-400 fs-large">
-
+                <nav class="navbar navbar-dark navbar-expand-lg fw-700 fs-large">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">
-                            <span id="navbarTitle">Menú</span> <!--Se maneja con un Script-->
+                            <span class="fw-400 fs-large" id="navbarTitle"></span>
+                            <!--Span se maneja con un script-->
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
-                            aria-label="Abrir navegación">
+                            aria-label="Abrir navegación" id="navbarBtn">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
                         <div class="collapse navbar-collapse navbar-nav navbar-spacing" id="navbarMenu">
-
-                            <a class="nav-link" href="#">Texto 1</a>
-                            <a class="nav-link" href="#">Texto 2</a>
-                            <a class="nav-link" href="#">Texto 3</a>
-                            <a class="nav-link" href="#">Texto 4</a>
-
+                            <a class="nav-link" href="#" style="">Texto 1</a>
+                            <a class="nav-link" href="#" style="">Texto 2</a>
+                            <a class="nav-link" href="#" style="">Texto 3</a>
+                            <a class="nav-link" href="#" style="">Texto 4</a>
                         </div>
-
                     </div>
 
                 </nav>
             </div>
         </div>
+
+        <!--Titulo-->
+        <div class="container-fluid container-width">
+            <h1 class="text-center">Titulo</h1>
+        </div>
+        <!--TODO Realizar el resto de la pagina, Login y demás cosas-->
+
+
     </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
 
 </body>
 
@@ -60,6 +76,6 @@
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
 
-    <script src="js/util/navbar-control.js"></script>
+<script src="js/util/navbar-control.js"></script>
 
 </html>
