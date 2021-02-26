@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -17,7 +18,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <title>Adquisiciones</title>
+    <title>Login</title>
 </head>
 
 <body>
@@ -26,16 +27,16 @@
         <div class="top-header"></div>
 
         <!--Barra de navegación-->
-        <div class="container-fluid container-width page-header">
+        <div class="container-fluid container-width fixed-top">
 
             <div class="bar-header">
                 <!--Imagen Vector Logo-->
-                <a href="">
+                <a href="https://uach.mx/">
                     <image src="resources/img/escudo-web-header-white.svg" height="100%" width="100%" alt="">
                 </a>
 
                 <nav class="navbar navbar-dark navbar-expand-lg fw-700 fs-large">
-                    <div class="container-fluid">
+                    <div class="container-fluid ">
                         <a class="navbar-brand" href="#">
                             <span class="fw-400 fs-large" id="navbarTitle"></span>
                             <!--Span se maneja con un script-->
@@ -58,13 +59,23 @@
             </div>
         </div>
 
-        <!--TODO Realizar el resto de la pagina, Login y demás cosas-->
-
     </header>
 
     <main>
-        <div class="container-fluid container-width shadow-sm">
-            <h1>Hola</h1>
+        <div class="container-fluid container-width container-height">
+            <div class="row shadow justify-content-sm-around">
+                <div class="col-sm-4">
+                    <img src="https://source.unsplash.com/random/600x600" alt="">
+                </div>
+                <div class="col-sm-6">
+                    <h1 class="modal-header text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+                    <div>
+                        <!--TODO Realizar Form para el Login-->
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </main>
 
@@ -77,6 +88,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
+
 
 <script src="js/util/navbar-control.js"></script>
 

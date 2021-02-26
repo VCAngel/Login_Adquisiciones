@@ -1,8 +1,10 @@
 /* *Paleta de color */
-:root{
+
+:root {
     --purple: rgba(110, 0, 118, 1);
     --indigo: rgba(75, 36, 99, 1);
     --dark-gray: #22262d;
+    --gold: #d5a521;
 }
 
 html {
@@ -13,7 +15,7 @@ html {
 
 *, *::before, *::after {
     box-sizing: inherit !important;
-    margin-top: 0 !important;
+    margin-top: 0;
 }
 
 body {
@@ -28,7 +30,7 @@ img, embed {
 /* *Globales */
 
 .container-width {
-    max-width: 80%;
+    max-width: 75%;
 }
 
 /* *Utilidades */
@@ -67,25 +69,24 @@ img, embed {
 
 /* * Header */
 
-.page-header {
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 100%;
-
-    /*TODO Hacer que esté alwaysOnTop*/
+.container-width.fixed-top {
+    max-width: 85%;
 }
 
 .top-header {
-    height: 100%;
+    width: 100%;
     padding: 1.5rem 0 !important;
-    background: rgb(110, 0, 118);
-    background: linear-gradient(90deg, rgba(110, 0, 118, 0) 0%, var(--purple) 50%, var(--indigo) 100%);
+    position: fixed top;
+    background: rgb(213, 165, 33);
+    background: -moz-radial-gradient(circle, rgba(213, 165, 33, 1) 0%, rgba(110, 0, 118, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(213, 165, 33, 1) 0%, rgba(110, 0, 118, 1) 100%);
+    background: radial-gradient(circle, rgba(213, 165, 33, 1) 0%, rgba(110, 0, 118, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d5a521", endColorstr="#6e0076", GradientType=1);
 }
 
 .bar-header {
     max-height: 100%;
-    margin: 1rem 0;
-    padding: 1rem 5rem;
+    padding: 1.5rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,4 +106,9 @@ img, embed {
     margin: 0 1rem;
 }
 
-/* TODO Login*/
+/* TODO Login (Main)*/
+
+.container-height {
+    margin-top: 7rem;
+    /* TODO Hacer Script para el margen del contenedor*/
+}
