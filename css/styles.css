@@ -1,3 +1,10 @@
+/* *Paleta de color */
+:root{
+    --purple: rgba(110, 0, 118, 1);
+    --indigo: rgba(75, 36, 99, 1);
+    --dark-gray: #22262d;
+}
+
 html {
     font-size: 62.5%;
     /* *Reset de REM » 62.5% de 16px = 10px*/
@@ -13,7 +20,7 @@ body {
     font-family: 'Quattrocento Sans', sans-serif;
 }
 
-img {
+img, embed {
     max-width: 100%;
     /* Recomendable 100% para que imagen se ajuste a contenedor*/
 }
@@ -21,7 +28,7 @@ img {
 /* *Globales */
 
 .container-width {
-    max-width: 75%;
+    max-width: 80%;
 }
 
 /* *Utilidades */
@@ -50,23 +57,39 @@ img {
     font-size: x-large;
 }
 
+.fst-bold {
+    font-style: bold;
+}
+
+.fst-italic {
+    font-style: italic;
+}
+
 /* * Header */
 
 .page-header {
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 100%;
+
     /*TODO Hacer que esté alwaysOnTop*/
 }
 
+.top-header {
+    height: 100%;
+    padding: 1.5rem 0 !important;
+    background: rgb(110, 0, 118);
+    background: linear-gradient(90deg, rgba(110, 0, 118, 0) 0%, var(--purple) 50%, var(--indigo) 100%);
+}
+
 .bar-header {
-    
-    max-height: 10%;
+    max-height: 100%;
     margin: 1rem 0;
     padding: 1rem 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(110, 0, 118);
-    background: linear-gradient(90deg, rgba(110, 0, 118, 0) 0%, rgba(110, 0, 118, 1) 50%, rgba(75, 36, 99, 1) 100%);
+    background: var(--dark-gray);
 }
 
 .bar-header a {

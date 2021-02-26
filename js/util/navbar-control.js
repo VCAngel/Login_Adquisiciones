@@ -21,7 +21,7 @@
             navbarTitle.innerHTML = "";
             updateWdwWidth();
         }
-    }, 200);
+    }, 100);
 
     function updateWdwWidth() { // *Actualizar el valor del ancho
         wdwWidth = window.innerWidth;
