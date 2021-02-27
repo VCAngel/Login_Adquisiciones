@@ -1,16 +1,20 @@
 /* *Paleta de color */
 
 :root {
-    --purple: rgba(110, 0, 118, 1);
-    --indigo: rgba(75, 36, 99, 1);
+    --lilac: #96009e;
+    --purple: #6e0076;
+    --indigo: #4b2463;
     --dark-gray: #22262d;
-    --gold: #d5a521;
+    --gold: rgb(212, 164, 33);
+    --yellow: rgb(242, 194, 63);
 }
 
 html {
     font-size: 62.5%;
-    /* *Reset de REM » 62.5% de 16px = 10px*/
+    /* !Reset de REM » 62.5% de 16px = 10px*/
     box-sizing: border-box;
+    position: relative;
+    height: 100%;
 }
 
 *, *::before, *::after {
@@ -20,6 +24,13 @@ html {
 
 body {
     font-family: 'Quattrocento Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main{
+    
 }
 
 img, embed {
@@ -27,10 +38,33 @@ img, embed {
     /* Recomendable 100% para que imagen se ajuste a contenedor*/
 }
 
+button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    height: fit-content;
+    position: relative;
+}
+
 /* *Globales */
 
 .container-width {
-    max-width: 75%;
+    max-width: 65%;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+}
+
+a.nav-link:hover {
+    color: var(--gold);
 }
 
 /* *Utilidades */
@@ -43,20 +77,28 @@ img, embed {
     font-weight: 700;
 }
 
+.fs-xsmall {
+    font-size: 1rem;
+}
+
 .fs-small {
-    font-size: small
+    font-size: 1.6rem;
 }
 
 .fs-medium {
-    font-size: medium;
+    font-size: 2.2rem;
 }
 
 .fs-large {
-    font-size: large;
+    font-size: 2.8rem;
 }
 
 .fs-xlarge {
-    font-size: x-large;
+    font-size: 3.4rem;
+}
+
+.fs-xxlarge {
+    font-size: 4rem;
 }
 
 .fst-bold {
@@ -70,13 +112,12 @@ img, embed {
 /* * Header */
 
 .container-width.fixed-top {
-    max-width: 85%;
+    max-width: 80%;
 }
 
 .top-header {
     width: 100%;
     padding: 1.5rem 0 !important;
-    position: fixed top;
     background: rgb(213, 165, 33);
     background: -moz-radial-gradient(circle, rgba(213, 165, 33, 1) 0%, rgba(110, 0, 118, 1) 100%);
     background: -webkit-radial-gradient(circle, rgba(213, 165, 33, 1) 0%, rgba(110, 0, 118, 1) 100%);
@@ -108,7 +149,68 @@ img, embed {
 
 /* TODO Login (Main)*/
 
+.site-content {
+    /* !Para que el contenedor se extiendo todo lo posible */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .container-height {
-    margin-top: 7rem;
-    /* TODO Hacer Script para el margen del contenedor*/
+    
+    /* TODO Hacer Script para el margen del contenedor, que se acomode al tamaño de la pantalla*/
+}
+
+.btn-gold {
+    color: white;
+    background-color: var(--gold);
+    border: none;
+    border-radius: 4px;
+    padding: .5rem;
+
+    min-width: 6ch;
+    font-weight: 400;
+    font-size: 2rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-gold:hover {
+    color: white;
+    background: var(--yellow);
+}
+
+.btn-gold:active{
+    background-color: var(--gold);
+}
+
+/* * Footer*/
+
+.bot-footer {
+    width: 100%;
+    padding: 2.5rem 0 !important;
+    background: rgb(213, 165, 33);
+    background: -moz-radial-gradient(circle, rgba(213, 165, 33, 1) 0%, rgba(110, 0, 118, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(213, 165, 33, 1) 0%, rgba(110, 0, 118, 1) 100%);
+    background: radial-gradient(circle, rgba(213, 165, 33, 1) 0%, rgba(110, 0, 118, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d5a521", endColorstr="#6e0076", GradientType=1);
+}
+
+.bar-footer {
+    max-height: 100%;
+    padding: 1.6rem 5%;
+    display: flex;
+    position: relative;
+    right: -50%;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--dark-gray);
+}
+
+.container-width.stay-bot {
+    max-width: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    z-index: 10;
 }
