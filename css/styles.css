@@ -5,8 +5,8 @@
     --purple: #6e0076;
     --indigo: #4b2463;
     --dark-gray: #22262d;
-    --gold: rgb(212, 164, 33);
-    --yellow: rgb(242, 194, 63);
+    --gold: #d4a421;
+    --yellow: #e5c56d;
 }
 
 html {
@@ -121,6 +121,10 @@ a.nav-link:hover {
     color: var(--gold);
 }
 
+.--dark-gray {
+    color: var(--dark-gray);
+}
+
 /* * Header */
 
 .container-width.fixed-top {
@@ -169,10 +173,6 @@ a.nav-link:hover {
     justify-content: center;
 }
 
-.container-height {
-    /* TODO Hacer Script para el margen del contenedor, que se acomode al tamaño de la pantalla*/
-}
-
 .btn-gold {
     color: white;
     background-color: var(--gold);
@@ -194,17 +194,36 @@ a.nav-link:hover {
     background-color: var(--gold);
 }
 
-h2.--purple::after{
-    content: '';
-    display: block;
-    width: 10%;
-    height: .7rem;
-    background-color: var(--gold);
-    transition: width 1s ease-in-out;
+.form-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h2.--purple:hover::after{
-    width: 80%;
+.form-btns a {
+    color: initial;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+}
+
+.form-btns a:hover {
+    color: var(--gold);
+}
+
+.form-btns a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: .5rem;
+    background-color: var(--light);
+    transition: width 0.75s ease-in-out, background-color 0.75s ease-in-out;
+}
+
+.form-btns a:hover::after {
+    width: 100%;
+    background-color: var(--purple);
 }
 
 /* * Footer*/

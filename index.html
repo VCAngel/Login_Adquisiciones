@@ -76,19 +76,23 @@
 
             <hr>
 
-            <div class="row shadow justify-content-evenly pt-4 pb-4 container-height">
-                <div class="col-sm-6 bg-light border-start border-bottom rounded rounded-3 p-0">
-                    <div class="container pt-3">
-                        
-                        <h2 class="--purple">Bienvenido al SAGU Financiero Adquisiciones por Internet</h2>
-                        <section class="overflow-auto">
+            <div class="row shadow justify-content-evenly pt-4 pb-4">
+                <div class="col-sm-6 bg-light p-0 card">
+                    <h2 class="--purple card-title card-header fs-medium">Bienvenido al SAGU Financiero Adquisiciones
+                        por Internet</h2>
+
+                    <div class="card-body">
+                        <section class="card-text fs-small">
+                            <h3 class="card-subtitle mb-lg-3 mt-lg-1">¿Cómo acceder?</h3>
                             <p>
-                                ¿Cómo acceder? Para poder acceder a los servicios de Adquisiciones, es necesario indicar
+                                Para poder acceder a los servicios de <b>Adquisiciones</b>, es necesario indicar
                                 el
-                                usuario y la contraseña que te proporcionó el Departamento de Adquisiciones.
+                                <b>usuario</b> y la <b>contraseña</b> que te proporcionó el Departamento de
+                                Adquisiciones.
                             </p>
                             <p>
-                                En caso de ser Proveedor registrado en la UACH, debes ingresar tu RFC como usuario y
+                                En caso de ser <b>Proveedor registrado</b> en la <b>UACH</b>, debes ingresar tu
+                                <b>RFC</b> como usuario y
                                 contraseña (sin espacios y con un guión antes de la homoclave ABCD010203-EFG), si es la
                                 primera vez que accedes, o la contraseña actual en caso de haberla modificado.
                             </p>
@@ -97,33 +101,35 @@
                 </div>
 
                 <div class="col-sm-5">
-                    <form class="form-group mt-lg-3 p-lg-2">
-                        <!--TODO Realizar Form para el Login-->
+                    <!--*Formulario para login-->
+                    <form class="form-group mt-lg-3 p-lg-2 needs-validation" novalidate>
 
-                        <label for="" class="fw-400 fs-medium">Usuario:</label>
+                        <label for="formUser" class="fw-400 fs-medium">Usuario:</label>
                         <div class="input-group col-sm me-auto mb-lg-3">
                             <span class="input-group-text" id="userIcon">
                                 <span class="material-icons">person_outline</span>
                             </span>
-                            <input type="email" class="form-control form-control-lg" placeholder="Usuario">
+                            <input type="email" class="form-control form-control-lg " id="formUser" placeholder="Usuario" required>
                         </div>
 
-                        <label for="" class="fw-400 fs-medium">Contraseña:</label>
+                        <label for="formPass" class="fw-400 fs-medium">Contraseña:</label>
                         <div class="input-group col-sm me-auto mb-lg-3">
                             <span class="input-group-text" id="pssIcon">
                                 <span class="material-icons">lock</span>
                             </span>
-                            <input type="password" class="form-control form-control-lg" placeholder="Contraseña">
+                            <input type="password" class="form-control form-control-lg" id="formPass" placeholder="Contraseña" required>
+                        </div>
+
+                        <div class="mt-lg-3 mb-lg-3 form-btns">
+                            <a href="#">¿Olvidaste tu contraseña?</a>
+
+                            <button type="submit" class="btn-gold fw-400 align-center" id="btnSubmit">
+                                Entrar&#10240
+                                <span class="material-icons --light">login</span>
+                            </button>
                         </div>
 
                     </form>
-
-                    <div class="mt-lg-3 mb-lg-3 col-sm">
-                        <button type="submit" class="btn-gold fw-400">
-                            Entrar&#10240
-                            <span class="material-icons --light">login</span>
-                        </button>
-                    </div>
 
                 </div>
 
@@ -164,7 +170,7 @@
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
 
-
 <script src="js/util/navbar-control.js"></script>
+<script src="js/util/login-controller.js"></script>
 
 </html>
