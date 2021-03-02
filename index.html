@@ -35,7 +35,7 @@
         <!--Barra de navegación-->
         <div class="container-fluid container-width fixed-top">
 
-            <div class="bar-header">
+            <div class="bar-header shadow">
                 <!--Imagen Vector Logo-->
                 <a href="https://uach.mx/">
                     <image src="resources/img/escudo-web-header-white.svg" height="100%" width="100%" alt="">
@@ -105,19 +105,23 @@
                     <form class="form-group mt-lg-3 p-lg-2 needs-validation" novalidate>
 
                         <label for="formUser" class="fw-400 fs-medium">Usuario:</label>
-                        <div class="input-group col-sm me-auto mb-lg-3">
-                            <span class="input-group-text" id="userIcon">
-                                <span class="material-icons">person_outline</span>
+                        <div class="input-group col-sm me-auto mb-lg-4">
+                            <span class="input-group-text">
+                                <span class="material-icons" name="icon">person_outline</span>
                             </span>
-                            <input type="email" class="form-control form-control-lg " id="formUser" placeholder="Usuario" required>
+
+                            <input type="email" class="form-control form-control-lg validate-input" id="formUser"
+                                placeholder="Usuario" required>
                         </div>
 
                         <label for="formPass" class="fw-400 fs-medium">Contraseña:</label>
-                        <div class="input-group col-sm me-auto mb-lg-3">
-                            <span class="input-group-text" id="pssIcon">
-                                <span class="material-icons">lock</span>
+                        <div class="input-group col-sm me-auto mb-lg-4">
+                            <span class="input-group-text">
+                                <span class="material-icons" name="icon">lock</span>
                             </span>
-                            <input type="password" class="form-control form-control-lg" id="formPass" placeholder="Contraseña" required>
+
+                            <input type="password" class="form-control form-control-lg validate-input" id="formPass"
+                                placeholder="Contraseña" required>
                         </div>
 
                         <div class="mt-lg-3 mb-lg-3 form-btns">
@@ -170,7 +174,7 @@
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"></script>
 
-<script src="js/util/navbar-control.js"></script>
-<script src="js/util/login-controller.js"></script>
+<script src="js/client/login-controller.js"></script>
+<script src="js/client/navbar-control.js"></script>
 
 </html>

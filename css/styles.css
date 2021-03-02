@@ -7,6 +7,7 @@
     --dark-gray: #22262d;
     --gold: #d4a421;
     --yellow: #e5c56d;
+    --danger: #dc3545;
 }
 
 html {
@@ -61,6 +62,10 @@ footer {
 
 a.nav-link:hover {
     color: var(--gold);
+}
+
+.material-icons{
+    transition: color 0.15s ease-in-out;
 }
 
 /* *Utilidades */
@@ -123,6 +128,10 @@ a.nav-link:hover {
 
 .--dark-gray {
     color: var(--dark-gray);
+}
+
+.--danger{
+    color: var(--danger);
 }
 
 /* * Header */
